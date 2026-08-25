@@ -325,3 +325,30 @@ body {
     font-size: 14px;
     overflow-x: auto;
 }
+
+.about-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.about-photo-large {
+    flex: 1;
+}
+
+.about-text-full {
+    flex: 2;
+}
+
+.about-photo-large .about-placeholder {
+    width: 240px;
+    height: 240px;
+    background: #E0E4EA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--color-text-light);
+    margin-bottom: 20px;
+}
