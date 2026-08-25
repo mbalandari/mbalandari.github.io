@@ -2,13 +2,181 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <title>Maz — Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Rock mechanics specialist & Python developer portfolio." />
+
+    <!-- Fonts (you can later move to CSS if you prefer) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Global stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-    <h1>Maz Portfolio</h1>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container navbar-content">
+            <div class="navbar-logo">Maz</div>
+            <nav class="navbar-links">
+                <a href="#hero">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="assets/cv/maz_cv.pdf" class="navbar-cv" target="_blank">CV</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="section hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Maz — Rock Mechanics Specialist & Python Developer</h1>
+                    <p>
+                        I build engineering tools for rock mass classification, analysis, and automation.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="assets/cv/maz_cv.pdf" class="btn btn-secondary" target="_blank">Download CV</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <!-- Placeholder: later add a collage or screenshot image -->
+                    <div class="hero-placeholder">
+                        Project screenshots / illustration here
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED PROJECTS -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <p class="section-subtitle">
+                    A selection of tools and applications I’ve built.
+                </p>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- Add <img src="assets/img/projects/rockmass-tool.png" alt="Rock Mass Tool"> later -->
+                        </div>
+                        <h3>Rock Mass Classification Tool</h3>
+                        <p>
+                            A GUI application for RMR, Q-System, and GSI classification with reporting and plots.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>PySide6</span>
+                            <span>Matplotlib</span>
+                        </div>
+                        <a href="projects/rockmass-tool.html" class="project-link">View Details</a>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-image"></div>
+                        <h3>Project Two</h3>
+                        <p>
+                            Short description of your second project goes here.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>CLI / Automation</span>
+                        </div>
+                        <a href="projects/project-2.html" class="project-link">View Details</a>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-image"></div>
+                        <h3>Project Three</h3>
+                        <p>
+                            Short description of your third project goes here.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Data / Tools</span>
+                        </div>
+                        <a href="projects/project-3.html" class="project-link">View Details</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS & TECHNOLOGIES -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2>Skills & Technologies</h2>
+                <p class="section-subtitle">
+                    I combine rock mechanics expertise with modern software tools.
+                </p>
+                <div class="skills-tags">
+                    <span>Python</span>
+                    <span>PySide6</span>
+                    <span>Matplotlib</span>
+                    <span>Git & GitHub</span>
+                    <span>Rock Mechanics</span>
+                    <span>RMR / Q-System / GSI</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT TEASER -->
+        <section id="about" class="section about-teaser">
+            <div class="container about-content">
+                <div class="about-photo">
+                    <!-- Add a photo or icon later -->
+                    <div class="about-placeholder">Photo / icon</div>
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        I’m a rock mechanics specialist with experience in lab tests, analysis, and engineering
+                        workflows.
+                        I use Python to turn rock engineering concepts into practical tools, like my rock mass
+                        classification app.
+                    </p>
+                    <a href="about/index.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT TEASER -->
+        <section id="contact" class="section contact-teaser">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>
+                    Open to remote roles in engineering software, QA, and automation.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:your.email@example.com">Email</a>
+                    <a href="https://github.com/YOUR_USERNAME" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank">LinkedIn</a>
+                </div>
+                <a href="contact/index.html" class="btn btn-secondary">Contact Page</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>© codingMaz - Built with HTML, CSS, and GitHub Pages</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>
