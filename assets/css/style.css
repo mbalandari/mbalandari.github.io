@@ -352,3 +352,50 @@ body {
     color: var(--color-text-light);
     margin-bottom: 20px;
 }
+
+.contact-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.contact-info {
+    flex: 2;
+}
+
+.contact-visual {
+    flex: 1;
+}
+
+.contact-placeholder {
+    width: 240px;
+    height: 240px;
+    background: #E0E4EA;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--color-text-light);
+}
+
+.contact-links-large {
+    margin: 20px 0;
+}
+
+.contact-item {
+    display: block;
+    margin-bottom: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.contact-item:hover {
+    color: var(--color-primary-dark);
+}
+
+.contact-label {
+    font-weight: 600;
+    margin-right: 6px;
+}
