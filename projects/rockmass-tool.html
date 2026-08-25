@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Rock Mass Classification Tool — Maz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Rock Mass Classification Tool — RMR, Q-System, GSI with reports." />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR (same style, relative links) -->
+    <header class="navbar">
+        <div class="container navbar-content">
+            <div class="navbar-logo">Maz</div>
+            <nav class="navbar-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#skills">Skills</a>
+                <a href="../about/index.html">About</a>
+                <a href="../contact/index.html">Contact</a>
+                <a href="../assets/cv/maz_cv.pdf" class="navbar-cv" target="_blank">CV</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- PROJECT HEADER -->
+        <section class="section">
+            <div class="container">
+                <h1>Rock Mass Classification Tool</h1>
+                <p class="section-subtitle">
+                    A desktop application for RMR, Q-System, and GSI classification with plotting and report export.
+                </p>
+            </div>
+        </section>
+
+        <!-- PROJECT OVERVIEW -->
+        <section class="section">
+            <div class="container project-layout">
+                <div class="project-main">
+                    <h2>Overview</h2>
+                    <p>
+                        This tool implements standard rock mass classification systems (RMR, Q-System, GSI) in a unified
+                        GUI.
+                        It allows engineers to input parameters, visualize results, and export structured reports for
+                        documentation.
+                    </p>
+
+                    <h2>Features</h2>
+                    <ul class="project-list">
+                        <li>RMR calculation with detailed component breakdown.</li>
+                        <li>Q-System computation with term-by-term transparency.</li>
+                        <li>GSI estimation based on structure and surface condition.</li>
+                        <li>Support recommendations derived from Q categories.</li>
+                        <li>PDF, DOCX, and TXT report export.</li>
+                        <li>RMR bar charts and other plots embedded in reports.</li>
+                    </ul>
+
+                    <h2>Tech Stack</h2>
+                    <div class="skills-tags">
+                        <span>Python</span>
+                        <span>PySide6</span>
+                        <span>Matplotlib</span>
+                        <span>Rock Mechanics</span>
+                        <span>RMR / Q-System / GSI</span>
+                    </div>
+
+                    <h2>GitHub Repository</h2>
+                    <p>
+                        <a href="https://github.com/YOUR_USERNAME/rockmass-tool" target="_blank" class="project-link">
+                            View on GitHub
+                        </a>
+                    </p>
+
+                    <h2>Installation & Usage</h2>
+                    <p>
+                        Clone the repository and install dependencies:
+                    </p>
+                    <pre class="code-block">
+git clone https://github.com/YOUR_USERNAME/rockmass-tool.git
+cd rockmass-tool
+pip install -r requirements.txt
+python -m gui.main
+          </pre>
+                </div>
+
+                <div class="project-side">
+                    <div class="project-image-large">
+                        <!-- Later: <img src="../assets/img/projects/rockmass-tool.png" alt="Rock Mass Tool screenshot"> -->
+                        <div class="hero-placeholder">Screenshot here</div>
+                    </div>
+
+                    <div class="project-meta">
+                        <h3>Project Type</h3>
+                        <p>Desktop GUI application for engineering workflows.</p>
+
+                        <h3>Role</h3>
+                        <p>Design, implementation, documentation.</p>
+
+                        <h3>Status</h3>
+                        <p>Active development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© Maz — Rock Mass Classification Tool</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
