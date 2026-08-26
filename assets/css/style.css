@@ -444,6 +444,19 @@ body {
     }
 }
 
+.about-text,
+.about-text-full {
+    margin-bottom: 24px;
+    /* gives breathing room before the button */
+}
+
+.about-teaser .btn,
+.about-text-full .btn {
+    margin-top: 16px;
+    /* ensures button never touches text */
+    display: inline-block;
+}
+
 
 /* -----------------------------------------------------------
    RESPONSIVE DESIGN — FIXED ABOUT & CONTACT TEXT ALIGNMENT
@@ -673,6 +686,17 @@ body {
 
     .project-meta p {
         font-size: 15px;
+    }
+
+    .about-text,
+    .about-text-full {
+        margin-bottom: 28px;
+        /* extra spacing for small screens */
+    }
+
+    .about-teaser .btn,
+    .about-text-full .btn {
+        margin-top: 20px;
     }
 
 }
