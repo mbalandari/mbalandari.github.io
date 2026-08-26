@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>UCS Analyzer — Maz</title>
+    <title>UCS Analyzer | M. Balandari Toroghi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="UCS Analyzer — Uniaxial Compressive Strength processing tool." />
+    <meta name="description" content="UCS Analyzer - Uniaxial Compressive Strength processing tool." />
 
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
@@ -17,14 +17,14 @@
 
     <header class="navbar">
         <div class="container navbar-content">
-            <div class="navbar-logo">Maz</div>
+            <div class="navbar-logo">M. Balandari Toroghi</div>
             <nav class="navbar-links">
                 <a href="../index.html">Home</a>
                 <a href="../index.html#projects">Projects</a>
                 <a href="../index.html#skills">Skills</a>
                 <a href="../about/index.html">About</a>
                 <a href="../contact/index.html">Contact</a>
-                <a href="../assets/cv/maz_cv.pdf" target="_blank">CV</a>
+                <a href="../assets/cv/CV_Balandari_Toroghi.pdf" target="_blank">CV</a>
             </nav>
         </div>
     </header>
@@ -47,18 +47,18 @@
                 <div class="project-main">
                     <h2>Overview</h2>
                     <p>
-                        The UCS Analyzer processes raw stress–strain data from UCS tests and automatically detects the
+                        The UCS Analyzer processes raw stress-strain data from UCS tests and automatically detects the
                         elastic region.
-                        It computes Young’s modulus, peak strength, and generates clean plots for engineering reports.
+                        It computes Young's modulus, peak strength, and generates clean plots for engineering reports.
                     </p>
 
                     <h2>Features</h2>
                     <ul class="project-list">
                         <li>Automatic elastic region detection.</li>
                         <li>Peak stress and strain calculation.</li>
-                        <li>Young’s modulus estimation.</li>
+                        <li>Young's modulus estimation.</li>
                         <li>CSV input and cleaned CSV output.</li>
-                        <li>Matplotlib plots for stress–strain curves.</li>
+                        <li>Matplotlib plots for stress-strain curves.</li>
                         <li>Batch processing for multiple specimens.</li>
                     </ul>
 
@@ -73,17 +73,17 @@
 
                     <h2>GitHub Repository</h2>
                     <p>
-                        <a href="https://github.com/YOUR_USERNAME/ucs-analyzer" target="_blank" class="project-link">
+                        <a href="https://github.com/mbalandari/ucs-analyzer-gui" target="_blank" class="project-link">
                             View on GitHub
                         </a>
                     </p>
 
                     <h2>Installation & Usage</h2>
                     <pre class="code-block">
-git clone https://github.com/YOUR_USERNAME/ucs-analyzer.git
-cd ucs-analyzer
+git clone https://github.com/mbalandari/ucs-analyzer-gui.git
+cd ucs-analyzer-gui
 pip install -r requirements.txt
-python main.py
+python -m gui.app
         </pre>
                 </div>
 
@@ -112,7 +112,10 @@ python main.py
 
     <footer class="footer">
         <div class="container">
-            <p>© Maz — UCS Analyzer</p>
+            <p>&copy;
+                <script>document.write(new Date().getFullYear())</script>
+                M. Balandari Toroghi. All rights reserved.
+            </p>
         </div>
     </footer>
 

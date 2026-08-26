@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>TCS Analyzer — Maz</title>
+    <title>TCS Analyzer | M. Balandari Toroghi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="TCS Analyzer — Triaxial Compressive Strength processing tool." />
+    <meta name="description" content="TCS Analyzer - Triaxial Compressive Strength processing tool." />
 
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
@@ -17,14 +17,14 @@
 
     <header class="navbar">
         <div class="container navbar-content">
-            <div class="navbar-logo">Maz</div>
+            <div class="navbar-logo">M. Balandari Toroghi</div>
             <nav class="navbar-links">
                 <a href="../index.html">Home</a>
                 <a href="../index.html#projects">Projects</a>
                 <a href="../index.html#skills">Skills</a>
                 <a href="../about/index.html">About</a>
                 <a href="../contact/index.html">Contact</a>
-                <a href="../assets/cv/maz_cv.pdf" target="_blank">CV</a>
+                <a href="../assets/cv/CV_Balandari_Toroghi.pdf" target="_blank">CV</a>
             </nav>
         </div>
     </header>
@@ -35,7 +35,7 @@
             <div class="container">
                 <h1>TCS Analyzer</h1>
                 <p class="section-subtitle">
-                    A Python tool for processing Triaxial Compressive Strength test data and generating Mohr–Coulomb
+                    A Python tool for processing Triaxial Compressive Strength test data and generating Mohr-Coulomb
                     envelopes.
                 </p>
             </div>
@@ -57,7 +57,7 @@
                     <ul class="project-list">
                         <li>Peak strength detection for each confining pressure.</li>
                         <li>Mohr circle generation.</li>
-                        <li>Linear Mohr–Coulomb envelope fitting.</li>
+                        <li>Linear Mohr-Coulomb envelope fitting.</li>
                         <li>Cohesion and friction angle calculation.</li>
                         <li>CSV input and cleaned CSV output.</li>
                         <li>Batch processing for multiple tests.</li>
@@ -74,17 +74,18 @@
 
                     <h2>GitHub Repository</h2>
                     <p>
-                        <a href="https://github.com/YOUR_USERNAME/tcs-analyzer" target="_blank" class="project-link">
+                        <a href="https://github.com/mbalandari/triaxial-test-analyzer" target="_blank"
+                            class="project-link">
                             View on GitHub
                         </a>
                     </p>
 
                     <h2>Installation & Usage</h2>
                     <pre class="code-block">
-git clone https://github.com/YOUR_USERNAME/tcs-analyzer.git
-cd tcs-analyzer
+git clone https://github.com/mbalandari/triaxial-test-analyzer.git
+cd triaxial-test-analyzer
 pip install -r requirements.txt
-python main.py
+python -m gui.app
         </pre>
                 </div>
 
@@ -113,7 +114,10 @@ python main.py
 
     <footer class="footer">
         <div class="container">
-            <p>© Maz — TCS Analyzer</p>
+            <p>&copy;
+                <script>document.write(new Date().getFullYear())</script>
+                M. Balandari Toroghi. All rights reserved.
+            </p>
         </div>
     </footer>
 
