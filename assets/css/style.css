@@ -457,6 +457,58 @@ body {
     display: inline-block;
 }
 
+.contact-illustration {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.contact-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.icon-wrapper {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #1E88E5;
+    /* your primary blue */
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+    fill: #fff;
+}
+
+.icon-wrapper:hover {
+    background: #1565C0;
+    /* darker blue */
+    transform: translateY(-3px);
+}
+
+.icon-wrapper.email {
+    background: #1E88E5;
+}
+
+.icon-wrapper.github {
+    background: #1565C0;
+}
+
+.icon-wrapper.linkedin {
+    background: #1E88E5;
+}
+
+
 
 /* -----------------------------------------------------------
    RESPONSIVE DESIGN — FIXED ABOUT & CONTACT TEXT ALIGNMENT
@@ -697,6 +749,11 @@ body {
     .about-teaser .btn,
     .about-text-full .btn {
         margin-top: 20px;
+    }
+
+    .contact-image {
+        max-width: 100%;
+        margin-bottom: 20px;
     }
 
 }
