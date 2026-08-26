@@ -421,3 +421,214 @@ body {
     object-fit: cover;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+/* -----------------------------------------------------------
+   RESPONSIVE DESIGN — FIXED ABOUT & CONTACT TEXT ALIGNMENT
+----------------------------------------------------------- */
+
+/* TABLET BREAKPOINT */
+@media (max-width: 900px) {
+
+    .container {
+        padding: 0 16px;
+    }
+
+    /* Navbar */
+    .navbar-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .navbar-links a {
+        margin-left: 0;
+        margin-right: 16px;
+    }
+
+    /* Hero section */
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image,
+    .hero-placeholder {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    /* Projects grid */
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ABOUT PAGE FIX */
+    .about-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-photo-img,
+    .about-placeholder {
+        margin: 0 auto;
+    }
+
+    .about-text-full {
+        text-align: left;
+        /* FIX: readable paragraphs */
+        width: 100%;
+        /* FIX: full width on mobile */
+        margin-top: 20px;
+    }
+
+    /* CONTACT PAGE FIX */
+    .contact-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        text-align: left;
+        /* FIX: readable text */
+        width: 100%;
+        /* FIX: full width */
+        margin-top: 20px;
+    }
+
+    .contact-links-large {
+        text-align: left;
+        /* FIX: left-align links */
+    }
+
+    .contact-placeholder {
+        margin: 0 auto;
+    }
+
+    /* HOMEPAGE ABOUT TEASER FIX */
+    .about-teaser .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        /* FIX: readable text */
+    }
+
+    .about-teaser .about-text {
+        width: 100%;
+        /* FIX: full width text */
+        margin-top: 20px;
+    }
+
+    .about-teaser .about-placeholder {
+        margin: 0 auto;
+        /* center the photo */
+    }
+
+    .about-teaser .btn {
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    /* PROJECT DETAIL PAGE FIX */
+    .project-layout {
+        flex-direction: column;
+        align-items: center;
+        /* center screenshot */
+    }
+
+    .project-main {
+        width: 100%;
+        /* full width text */
+        text-align: left;
+        /* readable paragraphs */
+        margin-top: 20px;
+    }
+
+    .project-side {
+        width: 100%;
+        /* full width meta section */
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .project-image-large {
+        width: 100%;
+        max-width: 420px;
+        /* keep screenshot reasonable */
+        margin: 0 auto 20px auto;
+        /* center screenshot */
+    }
+
+    .project-meta h3 {
+        margin-top: 20px;
+    }
+
+    .project-meta p {
+        margin-bottom: 10px;
+    }
+
+}
+
+/* MOBILE BREAKPOINT */
+@media (max-width: 600px) {
+
+    .section {
+        padding: 50px 0;
+    }
+
+    /* Hero text */
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    /* Projects grid becomes 1 column */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Project page layout */
+    .project-layout {
+        flex-direction: column;
+    }
+
+    .project-image-large {
+        margin-bottom: 20px;
+    }
+
+    /* Contact links */
+    .contact-item {
+        font-size: 14px;
+    }
+
+    /* PROJECT DETAIL PAGE — MOBILE TWEAKS */
+    .project-main h2 {
+        font-size: 22px;
+    }
+
+    .project-main p,
+    .project-list li {
+        font-size: 15px;
+    }
+
+    .project-meta h3 {
+        font-size: 18px;
+    }
+
+    .project-meta p {
+        font-size: 15px;
+    }
+
+}
