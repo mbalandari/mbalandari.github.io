@@ -45,7 +45,8 @@
             <div class="container">
                 <h1>Rock Mass Classification Tool</h1>
                 <p class="section-subtitle">
-                    A desktop application for RMR, Q-System, and GSI classification with plotting and report export.
+                    A Python-based engineering application for rock-mass characterization using RMR, Q-System, and GSI,
+                    with integrated visualization, preliminary support assessment, and automated report generation.
                 </p>
             </div>
         </section>
@@ -56,20 +57,48 @@
                 <div class="project-main">
                     <h2>Overview</h2>
                     <p>
-                        This tool implements standard rock mass classification systems (RMR, Q-System, GSI) in a unified
-                        GUI.
-                        It allows engineers to input parameters, visualize results, and export structured reports for
+                        Rock-mass characterization involves the evaluation of geological and geotechnical parameters
+                        through established classification systems such as RMR, Q-System, and GSI. In practical
+                        engineering workflows, these assessments can involve repetitive parameter entry, calculations,
+                        interpretation of classification results, visualization, and preparation of technical
                         documentation.
                     </p>
+                    <p>I developed this application to bring these steps into a single, structured Python-based
+                        workflow. The tool allows engineering parameters to be entered through a graphical interface,
+                        calculates the selected classification indices, presents the results through dedicated
+                        engineering visualizations, provides preliminary Q-based support recommendations, and generates
+                        structured reports for documentation.</p>
+                    <p>The project was designed not simply as a calculator, but as an example of how rock mechanics
+                        methodologies can be translated into maintainable engineering software.</p>
+                    <br>
 
                     <h2>Features</h2>
                     <ul class="project-list">
-                        <li>RMR calculation with detailed component breakdown.</li>
-                        <li>Q-System computation with term-by-term transparency.</li>
-                        <li>GSI estimation based on structure and surface condition.</li>
-                        <li>Support recommendations derived from Q categories.</li>
-                        <li>PDF, DOCX, and TXT report export.</li>
-                        <li>RMR bar charts and other plots embedded in reports.</li>
+                        <li><strong>RRMR calculation with component-level breakdown</strong></li>
+                        <p>Calculates Rock Mass Rating from UCS, RQD, discontinuity spacing, discontinuity condition,
+                            groundwater conditions, and orientation adjustment, while showing the contribution of
+                            individual parameters.</p>
+                        <br>
+                        <li><strong>Q-System analysis</strong></li>
+                        <p>Calculates the Q-value from RQD, joint set number (Jn), joint roughness (Jr), joint
+                            alteration (Ja), water reduction factor (Jw), and stress reduction factor (SRF), with
+                            term-by-term transparency.</p>
+                        <br>
+                        <li><strong>GSI estimation and visualization</strong></li>
+                        <p>Estimates GSI using the implemented rock-mass structure and surface-condition classifications
+                            and presents the result graphically.</p>
+                        <br>
+                        <li><strong>Preliminary support assessment</strong></li>
+                        <p>Generates simplified Q-based support recommendations using the implemented threshold-based
+                            classification logic.</p>
+                        <br>
+                        <li><strong>Engineering visualization</strong></li>
+                        <p>Produces RMR contribution bar charts, Q-System radar charts, and GSI structure-domain
+                            diagrams for easier interpretation and reporting.</p>
+                        <br>
+                        <li><strong>Automated engineering reports</strong></li>
+                        <p>Exports calculated results, parameter breakdowns, charts, and recommendations in PDF, DOCX,
+                            and TXT formats.</p>
                     </ul>
 
                     <h2>Tech Stack</h2>
@@ -77,22 +106,30 @@
                         <span>Python</span>
                         <span>PySide6</span>
                         <span>Matplotlib</span>
+                        <span>ReportLab</span>
+                        <span>python-docx</span>
                         <span>Rock Mechanics</span>
                         <span>RMR / Q-System / GSI</span>
                     </div>
+                    <br>
 
                     <h2>GitHub Repository</h2>
                     <p>
-                        <a href="https://github.com/mbalandari/rockmass-classification-tool" target="_blank"
-                            class="project-link">
-                            View on GitHub
-                        </a>
+                    <p>The complete source code, documentation, examples, tests, and implementation details are
+                        available in the GitHub repository.</p>
+                    <a href="https://github.com/mbalandari/rockmass-classification-tool" target="_blank"
+                        class="project-link">
+                        View on GitHub
+                    </a>
                     </p>
+                    <br>
 
                     <h2>Installation & Usage</h2>
                     <p>
-                        Clone the repository and install dependencies:
+                        Run the application locally by cloning the repository, installing the required Python
+                        dependencies, and launching the PySide6 GUI:
                     </p>
+                    <br>
                     <pre class="code-block">
 git clone https://github.com/mbalandari/rockmass-classification-tool.git
 cd rockmass-classification-tool
@@ -109,13 +146,13 @@ python -m gui.app
 
                     <div class="project-meta">
                         <h3>Project Type</h3>
-                        <p>Desktop GUI application for engineering workflows.</p>
-
+                        <p>Python desktop application for rock-mass classification and engineering analysis.</p>
+                        <br>
                         <h3>Role</h3>
-                        <p>Design, implementation, documentation.</p>
-
+                        <p>Engineering design, software development, visualization, and documentation.</p>
+                        <br>
                         <h3>Status</h3>
-                        <p>Active development.</p>
+                        <p>Active development and refinement.</p>
                     </div>
                 </div>
             </div>
