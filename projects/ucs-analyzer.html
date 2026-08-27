@@ -41,10 +41,10 @@
 
         <section class="section">
             <div class="container">
-                <h1>UCS Analyzer</h1>
+                <h1>UCS Analyzer - Rock Strength & Laboratory Data Analysis</h1>
                 <p class="section-subtitle">
-                    A Python tool for processing Uniaxial Compressive Strength test data with automatic elastic region
-                    detection.
+                    A Python-based rock mechanics application for processing UCS laboratory data, estimating strength
+                    and elastic properties, visualizing stress-strain behavior, and generating engineering reports.
                 </p>
             </div>
         </section>
@@ -55,38 +55,67 @@
                 <div class="project-main">
                     <h2>Overview</h2>
                     <p>
-                        The UCS Analyzer processes raw stress-strain data from UCS tests and automatically detects the
-                        elastic region.
-                        It computes Young's modulus, peak strength, and generates clean plots for engineering reports.
+                        Uniaxial Compressive Strength (UCS) testing is a fundamental laboratory method for
+                        characterizing the strength and deformation behavior of intact rock. Converting raw test data
+                        into useful engineering parameters, however, requires data preparation, stress-strain analysis,
+                        identification of the relevant elastic region, calculation of material properties,
+                        visualization, and documentation.
                     </p>
-
+                    <p>I developed the UCS Analyzer to bring these steps into a single Python-based workflow. The
+                        application accepts raw UCS test data in CSV or Excel format, processes the stress-strain
+                        relationship, allows the elastic region used for Young's modulus estimation to be adjusted,
+                        calculates key engineering parameters, generates plots, and exports the results in multiple
+                        report formats.</p>
+                    <p>The project demonstrates how a laboratory testing workflow can be translated into a reproducible
+                        engineering data-analysis tool, reducing repetitive processing while keeping the calculation
+                        workflow transparent to the user.</p>
+                    <br>
                     <h2>Features</h2>
                     <ul class="project-list">
-                        <li>Automatic elastic region detection.</li>
-                        <li>Peak stress and strain calculation.</li>
-                        <li>Young's modulus estimation.</li>
-                        <li>CSV input and cleaned CSV output.</li>
-                        <li>Matplotlib plots for stress-strain curves.</li>
-                        <li>Batch processing for multiple specimens.</li>
+                        <li><strong>CSV and Excel data input</strong> - Loads UCS laboratory data from common tabular
+                            formats, providing
+                            a practical starting point for processing test results.</li>
+                        <li><strong>Stress-strain analysis</strong> - Processes the relationship between applied stress
+                            and strain and generates an engineering stress-strain curve for each analysis.</li>
+                        <li><strong>Adjustable elastic region</strong> - Allows the user to define the portion of the
+                            stress-strain response used for Young's modulus estimation rather than relying on a
+                            completely fixed assumption.</li>
+                        <li><strong>UCS calculation</strong> - Identifies the peak stress reached during the test and
+                            reports the corresponding uniaxial compressive strength.</li>
+                        <li><strong>Young's modulus estimation</strong> - Estimates the elastic modulus from the
+                            selected elastic region of the stress-strain response.</li>
+                        <li><strong>Strain at UCS</strong> - Reports the strain corresponding to the peak UCS value.
+                        </li>
+                        <li><strong>Engineering visualization</strong> - Generates a stress-strain plot with the UCS
+                            point highlighted for easier interpretation of the test behavior.</li>
+                        <li><strong>Multi-format reporting</strong> - Exports analysis results in TXT, PDF, and DOCX
+                            formats for documentation and further engineering use.</li>
                     </ul>
 
                     <h2>Tech Stack</h2>
                     <div class="skills-tags">
                         <span>Python</span>
+                        <span>PySide6</span>
                         <span>Pandas</span>
                         <span>Matplotlib</span>
                         <span>Rock Mechanics</span>
                         <span>UCS Testing</span>
                     </div>
 
+                    <br>
                     <h2>GitHub Repository</h2>
                     <p>
-                        <a href="https://github.com/mbalandari/ucs-analyzer-gui" target="_blank" class="project-link">
-                            View on GitHub
-                        </a>
+                    <p>The complete source code, documentation, examples, analysis methodology, and implementation
+                        details are available in the GitHub repository.</p>
+                    <a href="https://github.com/mbalandari/ucs-analyzer-gui" target="_blank" class="project-link">
+                        View on GitHub
+                    </a>
                     </p>
-
+                    <br>
                     <h2>Installation & Usage</h2>
+                    <p>Run the application locally by cloning the repository, installing the required Python
+                        dependencies, and launching the PySide6 desktop interface:</p>
+                    <br>
                     <pre class="code-block">
 git clone https://github.com/mbalandari/ucs-analyzer-gui.git
 cd ucs-analyzer-gui
@@ -103,13 +132,14 @@ python -m gui.app
 
                     <div class="project-meta">
                         <h3>Project Type</h3>
-                        <p>Engineering data processing tool.</p>
-
+                        <p>Python desktop application for rock mechanics laboratory data analysis.</p>
+                        <br>
                         <h3>Role</h3>
-                        <p>Design, implementation, documentation.</p>
-
+                        <p>Engineering methodology, software development, data analysis, visualization, and
+                            documentation.</p>
+                        <br>
                         <h3>Status</h3>
-                        <p>Completed.</p>
+                        <p>Functional release - ongoing refinement.</p>
                     </div>
                 </div>
 
