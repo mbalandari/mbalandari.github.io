@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>TCS Analyzer | M. Balandari Toroghi</title>
+    <title>Triaxial Test Analyzer | M. Balandari Toroghi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="TCS Analyzer - Triaxial Compressive Strength processing tool." />
     <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
@@ -41,10 +41,11 @@
 
         <section class="section">
             <div class="container">
-                <h1>TCS Analyzer</h1>
+                <h1>Triaxial Test Analyzer</h1>
                 <p class="section-subtitle">
-                    A Python tool for processing Triaxial Compressive Strength test data and generating Mohr-Coulomb
-                    envelopes.
+                    A Python-based rock mechanics application for processing triaxial test data, evaluating peak
+                    strength under confinement, generating Mohr circles, fitting Mohr-Coulomb failure envelopes, and
+                    producing engineering reports.
                 </p>
             </div>
         </section>
@@ -55,40 +56,64 @@
                 <div class="project-main">
                     <h2>Overview</h2>
                     <p>
-                        The TCS Analyzer processes triaxial test data, computes peak strength under confinement, and
-                        generates Mohr circles
-                        and failure envelopes. It is designed for geotechnical engineers analyzing rock strength
-                        parameters.
+                        Triaxial testing provides a way to investigate the strength and failure behavior of rock under
+                        different confining pressures. Interpreting a series of triaxial tests requires more than
+                        identifying the peak strength of individual specimens: the results must be transformed into
+                        principal stress states and evaluated together to characterize the overall failure envelope.
                     </p>
+                    <p>I developed the Triaxial Test Analyzer to organize this workflow into a single Python-based
+                        application. The tool accepts triaxial test data, identifies peak stress and strain for each
+                        test, calculates the relevant principal stresses, generates Mohr circles, and fits a linear
+                        Mohr-Coulomb failure envelope across the test series.</p>
+                    <p>The resulting analysis provides estimates of key shear-strength parameters, including cohesion
+                        and friction angle, while the graphical output makes the relationship between confinement, peak
+                        strength, and failure behavior easier to inspect and communicate.</p>
+                    <br>
 
                     <h2>Features</h2>
                     <ul class="project-list">
-                        <li>Peak strength detection for each confining pressure.</li>
-                        <li>Mohr circle generation.</li>
-                        <li>Linear Mohr-Coulomb envelope fitting.</li>
-                        <li>Cohesion and friction angle calculation.</li>
-                        <li>CSV input and cleaned CSV output.</li>
-                        <li>Batch processing for multiple tests.</li>
+                        <li><strong>CSV and Excel test-data input</strong> - Loads triaxial test datasets from CSV and
+                            XLSX files for analysis.</li>
+                        <li><strong>Peak strength identification</strong> - Determines peak stress and corresponding
+                            strain for each triaxial test under its specified confining pressure.</li>
+                        <li><strong>Principal stress calculation</strong> - Calculates the relevant major and minor
+                            principal stresses used to construct the stress state at failure.</li>
+                        <li><strong>Mohr circle generation</strong> - Generates correctly scaled Mohr circles from the
+                            calculated principal stresses, with tangent points and an overlaid failure envelope.</li>
+                        <li><strong>Mohr-Coulomb envelope fitting</strong> - Fits a linear failure envelope to the
+                            triaxial test results to characterize the relationship between normal and shear stress.</li>
+                        <li><strong>Strength parameter estimation</strong> - Calculates the corresponding cohesion and
+                            friction angle from the fitted failure criterion.</li>
+                        <li><strong>Engineering visualization</strong> - Produces graphical outputs that make the
+                            relationship between confining pressure, peak strength, and failure behavior easier to
+                            interpret.</li>
+                        <li><strong>Automated report generation</strong> - Exports analysis results and Mohr-circle
+                            plots in TXT, PDF, and DOCX formats.</li>
                     </ul>
 
                     <h2>Tech Stack</h2>
                     <div class="skills-tags">
                         <span>Python</span>
+                        <span>PySide6</span>
                         <span>Pandas</span>
                         <span>Matplotlib</span>
                         <span>Rock Mechanics</span>
-                        <span>TCS Testing</span>
+                        <span>Triaxial Testing</span>
                     </div>
-
+                    <br>
                     <h2>GitHub Repository</h2>
                     <p>
-                        <a href="https://github.com/mbalandari/triaxial-test-analyzer" target="_blank"
-                            class="project-link">
-                            View on GitHub
-                        </a>
+                    <p>The complete source code, documentation, example datasets, tests, and implementation details are
+                        available in the GitHub repository.</p>
+                    <a href="https://github.com/mbalandari/triaxial-test-analyzer" target="_blank" class="project-link">
+                        View on GitHub
+                    </a>
                     </p>
-
+                    <br>
                     <h2>Installation & Usage</h2>
+                    <p>Run the application locally by cloning the repository, installing the required Python
+                        dependencies, and launching the PySide6 desktop interface:</p>
+                    <br>
                     <pre class="code-block">
 git clone https://github.com/mbalandari/triaxial-test-analyzer.git
 cd triaxial-test-analyzer
@@ -105,13 +130,14 @@ python -m gui.app
 
                     <div class="project-meta">
                         <h3>Project Type</h3>
-                        <p>Engineering analysis tool.</p>
-
+                        <p>Python desktop application for triaxial rock mechanics data analysis.</p>
+                        <br>
                         <h3>Role</h3>
-                        <p>Design, implementation, documentation.</p>
-
+                        <p>Engineering methodology, software development, data analysis, visualization, and
+                            documentation.</p>
+                        <br>
                         <h3>Status</h3>
-                        <p>Completed.</p>
+                        <p>Functional release - ongoing refinement.</p>
                     </div>
                 </div>
 
