@@ -14,7 +14,7 @@
   &nbsp;·&nbsp;
   <a href="https://github.com/mbalandari">💻 GitHub Profile</a>
   &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/mbalandari">💼 LinkedIn</a>
+  <a href="https://www.linkedin.com/in/mbalandari">💼 LinkedIn</a>
 </p>
 
 ---
@@ -207,7 +207,7 @@ This includes:
 
 - 🌐 **Portfolio:** https://mbalandari.github.io/
 - 💻 **GitHub:** https://github.com/mbalandari
-- 💼 **LinkedIn:** https://www.linkedin.com/mbalandari
+- 💼 **LinkedIn:** https://www.linkedin.com/in/mbalandari
 
 ---
 
